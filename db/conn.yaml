@@ -1,0 +1,21 @@
+apiVersion: cqlclient.scylla.scylladb.com/v1alpha1
+authInfos:
+  admin:
+    clientCertificateData:
+    clientKeyData: 
+    password: cassandra
+    username: cassandra
+contexts:
+  default:
+    authInfoName: admin
+    datacenterName: us-east-1
+currentContext: default
+datacenters:
+  us-east-1:
+    certificateAuthorityData: 
+    nodeDomain: cql.cloud-18728.w0.us-east-1.aws.scylla.cloud
+    server: cql.cloud-18728.w0.us-east-1.aws.scylla.cloud:9142
+kind: CQLConnectionConfig
+parameters:
+  defaultConsistency: QUORUM
+  defaultSerialConsistency: SERIAL
